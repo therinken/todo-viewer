@@ -28,9 +28,9 @@
     </div>
     <script type="text/template" id="item-template">
         <div class="view">
-            <input class="toggle" type="checkbox" <%=c ompleted ? 'checked' : '' %>>
+            <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
             <label>
-                <%=t itle %>
+                <%= title %>
             </label>
             <button class="destroy"></button>
         </div>
@@ -40,9 +40,9 @@
     <script type="text/template" id="stats-template">
         <span id="todo-count">
             <strong>
-                <$=r emaining %>
+                <$= remaining %>
             </strong>
-            <%=r emaining===1 ? 'item' %>
+            <%= remaining === 1 ? 'item' %>
         </span>
         <ul id="filters">
             <li>
@@ -57,7 +57,7 @@
         </ul>
         <% if (completed) { %>
             <button id="clear-completed">Clear completed (
-                <%=c ompleted %>)</button>
+                <%= completed %>)</button>
             <% } %>
     </script>
 

@@ -20,7 +20,7 @@
             _.templateSettings.interpolate = /{([\s\S]+?)}/g;
 
             // start app?
-        })
+        });
 
     }
     
